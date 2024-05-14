@@ -730,6 +730,130 @@ p, h1, h3, h5 {
     }
     
 }
+@media (max-width: 393) {
+    .navbar{
+        /* height: 20px; */
+        /* display: flex; */
+        padding: 5px;
+        /* overflow: hidden; */
+        margin-bottom: 20px;
+        /* padding: 10px; */
+        height:  max-content;
+
+    }
+
+    .entry-container{
+        display: flex;
+        flex-direction: column;
+        /* align-self: stretch; */
+        align-items: center;
+        justify-content: space-evenly;
+        /* gap: 100px; */
+        margin: 0;
+        /* border: 5px solid rebeccapurple; */
+        padding: 50px;
+        height: 100vh;
+        line-height: 1.5;
+        /* opacity: .5;
+        z-index: -1; */
+        /* flex-grow: 1; */
+    
+    
+    }
+    #ProfilePicture{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .container-under-entry{
+        width: 80vw;
+        height: 40vh;
+        padding: auto;
+        /* font-size: .5rem; */
+        /* font-size: 1px; */
+        /* padding: 50px; */
+        /* border: 20px solid green; */
+    }
+    .navbar-text{
+        font-size: .5rem;
+    }
+    .text{
+        font-size: .6rem;
+    }
+    h1{
+        font-size: large;
+    }
+
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        justify-content: space-evenly;
+        padding: 10px;
+        background-color: var(--div-background-color);
+        color:var(--text-color);
+    
+    }
+
+    .test{
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+    }
+    .div-under-about-container2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid red;
+        margin-top: 10px;
+        display: flex;
+        /* gap: ; */
+        /* justify-content: space-around; */
+        /* gap: 80px; */
+    }
+    .div-under-about-container-2-2{
+        width: 20px;
+        max-width: 90vw;
+        height: 30vh;
+        font-size: .5rem;
+        border-radius: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        width: 500px;
+        background-color: rgba(255, 211, 130, 0.027);
+    }
+
+    .skill-container{
+        padding: 2px;
+        height: 20vh;
+
+    
+    }
+
+    .div-under-skills-container{
+    
+        padding: 2px;
+
+    }
+
+    .div-under-skills-container .card.glass.scroller{
+        min-width: 10px;
+        max-height: 10px;
+        height: max-content;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-small{
+        font-size: .3rem;
+    }
+    .fa-brands{
+        font-size: .1rem;
+    }
+    
+}
+
 
  @media (min-width: 500px) {
     .h1-under-about-container{
