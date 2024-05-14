@@ -624,7 +624,7 @@ p, h1, h3, h5 {
         flex-direction: column;
         /* align-self: stretch; */
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         /* gap: 100px; */
         margin: 0;
         /* border: 5px solid rebeccapurple; */
