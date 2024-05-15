@@ -235,6 +235,10 @@ body > div{
         /* border-radius: 10% 20% 30% 40%/ 10% 20% 30% 40%; */
     }
 }
+
+.emphasize:hover{
+    color: var(--black);
+}
 .typewriter-about{
     position: relative;
     width: max-content;
@@ -281,7 +285,11 @@ body > div{
     /* border: 5px solid yellow; */
     /* margin: 0; */
     padding: 10px;
-    background-color: var(--div-background-color);
+    background-image: url(/assets/sky.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-color: var(--div-background-color); */
     color:var(--text-color);
     /* flex-grow: 1; */
 
@@ -369,11 +377,35 @@ body > div{
 }
 
 .card-title{
+
     color: var(--text-color);
 }
 .fa-brands{
     color: var(--text-color);
 }
+/* Mark */
+.fa-brands:hover{
+    transform: translateY(-10px);
+    
+    /* padding: 0; */
+    /* animation: lift 1s linear; */
+}
+.fa-github:hover{
+    border: 1px solid var(--black);
+}
+.fa-linkedin:hover{
+    border: 1px solid #156fe6;
+}
+/* @keyframes lift {
+    
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+    
+} */
 
 
 .div-under-skills-container .card.glass.scroller{
@@ -403,7 +435,10 @@ body > div{
     /* height: 100%; */
     /* width: 100vw; */
     /* background-color: var(--text-color); */
-    background-color: var(--text-color);
+    /* background-color: var(--text-color); */
+    background-image: url(/assets/sky2.webp);
+    background-attachment: fixed;
+    background-size: cover;
     align-self: stretch;
     color: var(--button-color);
 }
@@ -709,16 +744,18 @@ p, h1, h3, h5 {
     }
 
     .test{
-        height: 100px;
-        width: 100px;
+        height: 200px;
+        width: 200px;
         object-fit: contain;
     }
     .div-under-about-container2{
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         border: 1px solid red;
-        margin-top: 10px;
+        padding: 10px;
+        row-gap: 10px;
+        /* margin-top: 10px; */
         display: flex;
         /* gap: ; */
         /* justify-content: space-around; */
@@ -727,7 +764,7 @@ p, h1, h3, h5 {
     .div-under-about-container-2-2{
         width: 20px;
         max-width: 90vw;
-        height: 30vh;
+        /* height: 30vh; */
         font-size: .5rem;
         border-radius: 10px;
         padding: 10px;
@@ -738,10 +775,13 @@ p, h1, h3, h5 {
 
     .skill-container{
         padding: 2px;
-        height: 20vh;
+        height: 10vh;
 
     
     }
+    .card.glass.scroller fa-brands{
+        display: none;
+    } 
 
     .div-under-skills-container{
     
@@ -750,11 +790,12 @@ p, h1, h3, h5 {
     }
 
     .div-under-skills-container .card.glass.scroller{
-        min-width: 10px;
-        max-height: 10px;
-        height: max-content;
+        max-width: 5px;
+        max-height: 5px;
+        font-size: x-large;
         align-items: center;
         justify-content: center;
+        border-radius: 10px;
     }
     .text-small{
         font-size: .3rem;
@@ -832,8 +873,8 @@ p, h1, h3, h5 {
     }
 
     .test{
-        height: 100px;
-        width: 100px;
+        height: 200px;
+        width: 200px;
         object-fit: contain;
     }
     .div-under-about-container2{
@@ -865,6 +906,10 @@ p, h1, h3, h5 {
 
     
     }
+
+    .card.glass.scroller fa-brands{
+        display: none;
+    } 
 
     .div-under-skills-container{
     
