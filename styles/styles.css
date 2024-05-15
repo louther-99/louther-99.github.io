@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--div-background-color);
+    /* background-color: var(--div-background-color); */
     background-image: url("/assets/cloud.jpg");
     color: var(--text-color);
     background-repeat: no-repeat;
@@ -302,7 +302,7 @@ body > div{
     align-self: center;
 }
 .div-under-about-container2{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 10px;
     display: flex;
     /* gap: ; */
@@ -330,7 +330,7 @@ body > div{
     padding: 10px;
     height: 30vh;
     align-self: stretch;
-    border: 5px solid var(--text-color);
+    /* border: 5px solid var(--text-color); */
     /* border: 5px solid palevioletred; */
     /* height: 100%;
     width: 100%; */
@@ -407,13 +407,13 @@ body > div{
     
 } */
 
-
+/* mark3 */
 .div-under-skills-container .card.glass.scroller{
     /* width: max-content; */
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 160px;
+    min-width: 120px;
     max-height: 100px;
     /* padding: 30px; */
     /* outline: 3px solid rebeccapurple; */
@@ -610,7 +610,7 @@ button{
     justify-content: center;
     align-items: center;
     align-self: stretch;
-    background-color: var(--div-background-color);
+    /* background-color: var(--div-background-color); */
     /* border: 5px solid green; */
 }
 
@@ -666,7 +666,7 @@ p, h1, h3, h5 {
         
     }
     .scroller{
-        animation: scroll 10s linear infinite;
+        animation: scroll 5s linear infinite;
     }
 
     @keyframes scroll {
@@ -722,10 +722,11 @@ p, h1, h3, h5 {
         /* border: 20px solid green; */
     }
     .navbar-text{
-        font-size: .5rem;
+        font-size: 1rem;
     }
     .text{
-        font-size: .6rem;
+        /* font-size: .6rem; */
+        font-size: 1rem;
     }
     h1{
         font-size: large;
@@ -752,7 +753,7 @@ p, h1, h3, h5 {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         padding: 10px;
         row-gap: 10px;
         /* margin-top: 10px; */
@@ -789,20 +790,28 @@ p, h1, h3, h5 {
 
     }
 
+
     .div-under-skills-container .card.glass.scroller{
-        max-width: 5px;
-        max-height: 5px;
-        font-size: x-large;
+        display: flex;
+        /* padding: 5px; */
+        max-width: 3px;
+        min-width: 100px;
+        max-height: 3px;
+        font-size: large;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         border-radius: 10px;
+        /* mark4 */
+        animation: scroll 15s linear infinite;
     }
+
     .text-small{
-        font-size: .3rem;
+        font-size: 1rem;
     }
-    .fa-brands{
+    /* .fa-brands{
         font-size: .1rem;
-    }
+    } */
     
 }
 @media (max-width: 393) {
@@ -881,7 +890,7 @@ p, h1, h3, h5 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-top: 10px;
         display: flex;
         /* gap: ; */
@@ -921,11 +930,13 @@ p, h1, h3, h5 {
         min-width: 10px;
         max-height: 10px;
         height: max-content;
-        align-items: center;
-        justify-content: center;
+        font-size: 50px;
+        /* align-items: center; */
+        /* justify-content: center; */
+        font-weight: bold;
     }
     .text-small{
-        font-size: .3rem;
+        font-size: 1rem;
     }
     /* .fa-brands{
         font-size: .1rem;
