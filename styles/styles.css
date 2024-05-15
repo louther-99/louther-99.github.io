@@ -90,9 +90,43 @@ body > div{
 }
 
 .navbar-brand:hover{
-    transform: translateY(-10px);
-    background-color: var(--text-color);
-    color: var(--button-color);
+    /* transform: translateY(-10px);
+    background-color: var(--text-color); */
+    color: var(--text-color);
+}
+
+.border-underline{
+    position: relative;
+}
+
+.border-underline::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--button-color);
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+    height: 2px;
+    /* color: var(--text-color); */
+    
+}
+.border-underline:hover a{
+    color: var(--text-color);
+}
+
+.border-underline:hover::before,
+.border-underline:focus::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--button-color);
+    transform: scaleX(1);
+    /* color: var(--text-color); */
+    
 }
 
 /* .container-body.flexbox-container{
@@ -638,14 +672,14 @@ p, h1, h3, h5 {
     
     }
     #ProfilePicture{
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         object-fit: cover;
     }
 
     .container-under-entry{
         width: 80vw;
-        height: 40vh;
+        /* height: max-content; */
         padding: auto;
         /* font-size: .5rem; */
         /* font-size: 1px; */
@@ -761,14 +795,14 @@ p, h1, h3, h5 {
     
     }
     #ProfilePicture{
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         object-fit: cover;
     }
 
     .container-under-entry{
         width: 80vw;
-        height: 40vh;
+        height: max-content;
         padding: auto;
         /* font-size: .5rem; */
         /* font-size: 1px; */
@@ -848,9 +882,9 @@ p, h1, h3, h5 {
     .text-small{
         font-size: .3rem;
     }
-    .fa-brands{
+    /* .fa-brands{
         font-size: .1rem;
-    }
+    } */
     
 }
 
