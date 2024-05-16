@@ -386,16 +386,20 @@ body > div{
 /* Mark */
 .fa-brands:hover{
     transform: translateY(-10px);
+
     
     /* padding: 0; */
     /* animation: lift 1s linear; */
 }
-.fa-github:hover{
+/* .fa-github:hover{
     border: 1px solid var(--black);
+
 }
-.fa-linkedin:hover{
+.fa-linkedin:hover::before{
+  
     border: 1px solid #156fe6;
-}
+  
+} */
 /* @keyframes lift {
     
     from{
@@ -605,6 +609,11 @@ button{
     }
 }
 
+.footer .fa-brands{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
 .footer.flexbox-container{
     display: flex;
     justify-content: center;
@@ -675,8 +684,7 @@ p, h1, h3, h5 {
         }
     }
 }
-
-@media (max-width: 480px) {
+@media (max-width: 1345px) {
     .navbar{
         /* height: 20px; */
         /* display: flex; */
@@ -707,8 +715,8 @@ p, h1, h3, h5 {
     
     }
     #ProfilePicture{
-        width: 200px;
-        height: 200px;
+        width: 400px;
+        height: 400px;
         object-fit: cover;
     }
 
@@ -813,6 +821,98 @@ p, h1, h3, h5 {
         font-size: .1rem;
     } */
     
+}
+
+@media (max-width: 1024px){
+
+    .entry-container{
+        display: flex;
+        flex-direction: column;
+      
+        align-items: center;
+        justify-content: space-evenly;
+  
+          
+    }
+    #ProfilePicture{
+        width: 400px;
+        height: 400px;
+    }
+
+    .div-under-about-container2 {
+      justify-content: space-evenly;
+      gap: 10px;
+    }
+
+    .div-under-about-container2 .test{
+        object-fit: cover;
+        column-gap: 5px;
+    }
+
+
+}
+@media (max-width: 768px){
+
+    .entry-container{
+        display: flex;
+        flex-direction: column;
+      
+        align-items: center;
+        justify-content: space-evenly;
+  
+          
+    }
+    #ProfilePicture{
+        width: 300px;
+        height: 300px;
+    }
+
+    .div-under-about-container2 {
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .div-under-about-container2 .test{
+        object-fit: cover;
+        column-gap: 5px;
+    }
+
+
+}
+@media (min-width: 500px) {
+    .h1-under-about-container{
+        color: white;
+    } 
+}
+
+@media (max-width: 480px) {
+
+    #ProfilePicture{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 430px){
+
+    #ProfilePicture{
+        width: 300px;
+        height: 300px;
+    }
+
+
+}
+
+@media (max-width: 414px){
+
+    #ProfilePicture{
+        width: 300px;
+        height: 300px;
+    }
+
+
 }
 @media (max-width: 393) {
     .navbar{
@@ -943,10 +1043,11 @@ p, h1, h3, h5 {
     } */
     
 }
+@media (max-width: 375px){
+    #ProfilePicture{
+        width: 250px;
+        height: 250px;
+    }
 
-
- @media (min-width: 500px) {
-    .h1-under-about-container{
-        color: white;
-    } 
 }
+
